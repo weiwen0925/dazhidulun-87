@@ -811,7 +811,7 @@ h5{font-size:18.5px!important;}
 </section>
 <section class=&quot;chapter&quot; id=&quot;chapter-1&quot;>
 <div class=&quot;ch-head&quot;>
-<div class=&quot;ch-num&quot;>卷八十七 · 第一品 · 第一章</div>
+<div class=&quot;ch-num&quot;>卷八十七 · 第1品 · 第一章</div>
 <h1 class=&quot;ch-name&quot;>大乘核心矛盾的邏輯解構</h1>
 <div class=&quot;ch-sub&quot;>空性邏輯三重張力 · 為何「次第行」是空中最後一道難題</div>
 </div>
@@ -881,7 +881,7 @@ h5{font-size:18.5px!important;}
 </section>
 <section class=&quot;chapter&quot; id=&quot;chapter-2&quot;>
 <div class=&quot;ch-head&quot;>
-<div class=&quot;ch-num&quot;>卷八十七 · 第一品 · 第二章</div>
+<div class=&quot;ch-num&quot;>卷八十七 · 第1品 · 第二章</div>
 <h1 class=&quot;ch-name&quot;>大智度論卷八十七經論原典</h1>
 <div class=&quot;ch-sub&quot;>經文 · 論主釋曰 · 五輪問答</div>
 </div>
@@ -1040,7 +1040,7 @@ h5{font-size:18.5px!important;}
 </section>
 <section class=&quot;chapter&quot; id=&quot;chapter-3&quot;>
 <div class=&quot;ch-head&quot;>
-<div class=&quot;ch-num&quot;>卷八十七 · 第一品 · 第三章</div>
+<div class=&quot;ch-num&quot;>卷八十七 · 第1品 · 第三章</div>
 <h1 class=&quot;ch-name&quot;>認知論矛盾的化解 · 以空為體</h1>
 <div class=&quot;ch-sub&quot;>畫布隱喻 · 藥蜜和合 · 六念無相 · 無憶之念</div>
 </div>
@@ -1141,7 +1141,7 @@ h5{font-size:18.5px!important;}
 </section>
 <section class=&quot;chapter&quot; id=&quot;chapter-4&quot;>
 <div class=&quot;ch-head&quot;>
-<div class=&quot;ch-num&quot;>卷八十七 · 第一品 · 第四章</div>
+<div class=&quot;ch-num&quot;>卷八十七 · 第1品 · 第四章</div>
 <h1 class=&quot;ch-name&quot;>本體論矛盾的破解 · 空非實體</h1>
 <div class=&quot;ch-sub&quot;>得不得同悖論 · 龍樹反證法 · 邏輯翻轉 · 遊戲三昧</div>
 </div>
@@ -1226,7 +1226,7 @@ h5{font-size:18.5px!important;}
 </section>
 <section class=&quot;chapter&quot; id=&quot;chapter-5&quot;>
 <div class=&quot;ch-head&quot;>
-<div class=&quot;ch-num&quot;>卷八十七 · 第一品 · 第五章</div>
+<div class=&quot;ch-num&quot;>卷八十七 · 第1品 · 第五章</div>
 <h1 class=&quot;ch-name&quot;>實踐論矛盾的轉化 · 三重動力</h1>
 <div class=&quot;ch-sub&quot;>無所得心 · 良藥予親 · 借假修真 · 視敵如師</div>
 </div>
@@ -1352,7 +1352,7 @@ h5{font-size:18.5px!important;}
 </section>
 <section class=&quot;chapter&quot; id=&quot;chapter-6&quot;>
 <div class=&quot;ch-head&quot;>
-<div class=&quot;ch-num&quot;>卷八十七 · 第一品 · 第六章</div>
+<div class=&quot;ch-num&quot;>卷八十七 · 第1品 · 第六章</div>
 <h1 class=&quot;ch-name&quot;>中觀統攝 · 空假中三重矩陣</h1>
 <div class=&quot;ch-sub&quot;>三諦矩陣 · 二諦梯子 · 空故無礙方程式 · 心法 SOP</div>
 </div>
@@ -1514,208 +1514,7 @@ h5{font-size:18.5px!important;}
     }catch(ex){}
   },true);
 })();
-</script>
-
-<script id="wy-protection-js" data-wy-protection="v2-silent">
-(function(){
-  var ALLOWED_HOST = 'weiwen0925.github.io';
-  var ALLOWED_PATH = '/dazhidulun-87/';
-
-  /* ---------- silent lockdown (永久不顯示，無警語) ---------- */
-  var __locked = false;
-  function silentLock(reason){
-    if(__locked) return;
-    __locked = true;
-    try{
-      // 清空 body，停止所有後續腳本執行
-      if(document.body) document.body.innerHTML = '';
-      if(document.head){
-        var meta = document.createElement('meta');
-        meta.setAttribute('name','wy-locked');
-        meta.setAttribute('content', reason || 'silent');
-        document.head.appendChild(meta);
-      }
-      // html 永久 hidden（不再 add wy-ready class）
-      document.documentElement.style.visibility = 'hidden';
-      document.documentElement.classList.remove('wy-ready');
-      // 阻止後續所有事件
-      ['contextmenu','copy','cut','paste','keydown','mousedown','selectstart','dragstart','beforeprint']
-        .forEach(function(ev){
-          window.addEventListener(ev, function(e){e.preventDefault();e.stopPropagation();return false;}, true);
-        });
-    }catch(e){}
-  }
-  window.__wySilentLock = silentLock;
-
-  /* ---------- L7 · webdriver / headless 偵測 ---------- */
-  try{
-    if(navigator.webdriver === true){ silentLock('webdriver'); return; }
-    if(/HeadlessChrome|PhantomJS|Selenium|puppeteer|Cypress|Playwright/i.test(navigator.userAgent || '')){
-      silentLock('headless'); return;
-    }
-    // 常見 headless 跡象：window.chrome 缺失
-    if(navigator.userAgent && navigator.userAgent.indexOf('Chrome') > -1 && !window.chrome){
-      silentLock('chrome-missing'); return;
-    }
-  }catch(e){ silentLock('detect-error'); return; }
-
-  /* ---------- L4 · Origin Lock 同步檢查 ---------- */
-  try{
-    var host = location.hostname || '';
-    var path = location.pathname || '';
-    var protocol = location.protocol || '';
-    // file:// 開啟 → 鎖定
-    if(protocol === 'file:'){ silentLock('file-protocol'); return; }
-    // about:blank / data: → 鎖定
-    if(protocol === 'about:' || protocol === 'data:'){ silentLock('non-http'); return; }
-    // host 不符 → 鎖定
-    if(host !== ALLOWED_HOST){ silentLock('host'); return; }
-    // path 前綴不符 → 鎖定
-    if(path.indexOf(ALLOWED_PATH) !== 0){ silentLock('path'); return; }
-  }catch(e){ silentLock('origin-error'); return; }
-
-  /* ---------- L8 · HEAD ping 線上活性驗證 ---------- */
-  var __wyReadyResolve;
-  window.__wyReady = new Promise(function(res){ __wyReadyResolve = res; });
-
-  function pingFreshness(){
-    var pingURL = location.protocol + '//' + ALLOWED_HOST + ALLOWED_PATH +
-                  '?_wyping=' + Date.now() + '.' + Math.random().toString(36).slice(2);
-    var timeout = 6000;
-
-    var controller, timer;
-    try{ controller = new AbortController(); }catch(e){}
-
-    var fetchOpts = {
-      method:'HEAD',
-      cache:'no-store',
-      mode:'cors',
-      credentials:'omit',
-      redirect:'manual'
-    };
-    if(controller) fetchOpts.signal = controller.signal;
-
-    timer = setTimeout(function(){
-      if(controller) try{ controller.abort(); }catch(e){}
-    }, timeout);
-
-    fetch(pingURL, fetchOpts).then(function(resp){
-      clearTimeout(timer);
-      // 通過：移除 preguard、reveal
-      document.documentElement.classList.add('wy-ready');
-      window.__wyOriginOK = true;
-      if(__wyReadyResolve) __wyReadyResolve(true);
-    }).catch(function(err){
-      clearTimeout(timer);
-      silentLock('ping-failed');
-    });
-  }
-
-  /* ---------- L2 · 列印攔截 + window.print 覆寫 ---------- */
-  try{
-    var origPrint = window.print;
-    window.print = function(){};
-    Object.defineProperty(window, 'print', {value: function(){}, writable:false, configurable:false});
-  }catch(e){}
-
-  document.addEventListener('keydown', function(e){
-    var k = (e.key || '').toLowerCase();
-    var ctrl = e.metaKey || e.ctrlKey;
-    // ⌘P/Ctrl+P
-    if(ctrl && (k === 'p')){ e.preventDefault(); e.stopPropagation(); return false; }
-    // ⌘S/Ctrl+S（另存）
-    if(ctrl && (k === 's')){ e.preventDefault(); e.stopPropagation(); return false; }
-    // ⌘C/Ctrl+C, ⌘X/Ctrl+X, ⌘A/Ctrl+A（複製、剪下、全選）
-    if(ctrl && (k === 'c' || k === 'x' || k === 'a')){ e.preventDefault(); e.stopPropagation(); return false; }
-    // ⌘U/Ctrl+U（檢視原始碼）
-    if(ctrl && (k === 'u')){ e.preventDefault(); e.stopPropagation(); return false; }
-    // F12 / Cmd+Opt+I/J / Ctrl+Shift+I/J/C/K（DevTools）
-    if(k === 'f12'){ e.preventDefault(); e.stopPropagation(); return false; }
-    if(ctrl && e.shiftKey && (k === 'i' || k === 'j' || k === 'c' || k === 'k')){
-      e.preventDefault(); e.stopPropagation(); return false;
-    }
-    if(e.metaKey && e.altKey && (k === 'i' || k === 'j' || k === 'c')){
-      e.preventDefault(); e.stopPropagation(); return false;
-    }
-  }, true);
-
-  /* ---------- 禁止文字空白 · copy/cut 永遠寫入零字元 ---------- */
-  // 即使瀏覽器允許 copy 事件，clipboardData 一律設為空字串
-  function blankClipboard(e){
-    try{
-      e.preventDefault();
-      e.stopPropagation();
-      var cd = e.clipboardData || window.clipboardData;
-      if(cd){
-        // 寫入零字元：所有可能的 MIME 都覆寫為空
-        try{ cd.setData('text/plain', ''); }catch(_){}
-        try{ cd.setData('text/html', ''); }catch(_){}
-        try{ cd.setData('Text', ''); }catch(_){}
-      }
-      // 順便清除目前選取，讓 OS 層級的 copy 也拿不到
-      try{
-        var sel = window.getSelection ? window.getSelection() : null;
-        if(sel) sel.removeAllRanges();
-      }catch(_){}
-      return false;
-    }catch(_){}
-  }
-  ['copy','cut'].forEach(function(ev){
-    document.addEventListener(ev, blankClipboard, true);
-    window.addEventListener(ev, blankClipboard, true);
-  });
-
-  /* ---------- 防右鍵、選取、拖曳 ---------- */
-  ['contextmenu','selectstart','dragstart'].forEach(function(ev){
-    document.addEventListener(ev, function(e){
-      e.preventDefault(); e.stopPropagation(); return false;
-    }, true);
-  });
-
-  /* ---------- 持續清除 selection ---------- */
-  setInterval(function(){
-    try{
-      var sel = window.getSelection ? window.getSelection() : null;
-      if(sel && sel.rangeCount > 0) sel.removeAllRanges();
-    }catch(_){}
-  }, 250);
-
-  /* ---------- DevTools 偵測（尺寸 heuristic）---------- */
-  var __devCheck = setInterval(function(){
-    var threshold = 160;
-    if(window.outerWidth - window.innerWidth > threshold ||
-       window.outerHeight - window.innerHeight > threshold){
-      clearInterval(__devCheck);
-      silentLock('devtools');
-    }
-  }, 1000);
-
-  /* ---------- L3 強化 · beforeprint 即清空（雙保險）---------- */
-  window.addEventListener('beforeprint', function(){
-    if(document.body) document.body.innerHTML = '';
-    document.documentElement.style.visibility = 'hidden';
-  }, true);
-  try{
-    var mq = window.matchMedia('print');
-    if(mq && mq.addEventListener){
-      mq.addEventListener('change', function(e){
-        if(e.matches){
-          if(document.body) document.body.innerHTML = '';
-          document.documentElement.style.visibility = 'hidden';
-        }
-      });
-    }
-  }catch(e){}
-
-  /* ---------- 啟動 HEAD ping ---------- */
-  if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', pingFreshness);
-  } else {
-    pingFreshness();
-  }
-})();
-</script>
-</body></html>" loading="lazy"></iframe>
+</script></body></html>" loading="lazy"></iframe>
       <div class="bridge bridge-outro">
         <div class="bridge-label">承先啟後</div>
         <p>本品破除了「空 vs. 次第」的對立，但並未具體展開「次第」的內涵——次第究竟是時間先後？是行法淺深？還是體證的維度？接下來第二品「次第學品」將正式定義「次第之名」，從三法問答（行學道有何差別）、四種分類模型、到八正道與六度的「制伏與具足」心法，把第一品的抽象論證，落實為可操作的修道地圖。</p>
@@ -5150,6 +4949,207 @@ h5{font-size:18.5px!important;}
 
   updateProgress();
   updateActive();
+})();
+</script>
+
+
+<script id="wy-protection-js" data-wy-protection="v2-silent">
+(function(){
+  var ALLOWED_HOST = 'weiwen0925.github.io';
+  var ALLOWED_PATH = '/dazhidulun-87/';
+
+  /* ---------- silent lockdown (永久不顯示，無警語) ---------- */
+  var __locked = false;
+  function silentLock(reason){
+    if(__locked) return;
+    __locked = true;
+    try{
+      // 清空 body，停止所有後續腳本執行
+      if(document.body) document.body.innerHTML = '';
+      if(document.head){
+        var meta = document.createElement('meta');
+        meta.setAttribute('name','wy-locked');
+        meta.setAttribute('content', reason || 'silent');
+        document.head.appendChild(meta);
+      }
+      // html 永久 hidden（不再 add wy-ready class）
+      document.documentElement.style.visibility = 'hidden';
+      document.documentElement.classList.remove('wy-ready');
+      // 阻止後續所有事件
+      ['contextmenu','copy','cut','paste','keydown','mousedown','selectstart','dragstart','beforeprint']
+        .forEach(function(ev){
+          window.addEventListener(ev, function(e){e.preventDefault();e.stopPropagation();return false;}, true);
+        });
+    }catch(e){}
+  }
+  window.__wySilentLock = silentLock;
+
+  /* ---------- L7 · webdriver / headless 偵測 ---------- */
+  try{
+    if(navigator.webdriver === true){ silentLock('webdriver'); return; }
+    if(/HeadlessChrome|PhantomJS|Selenium|puppeteer|Cypress|Playwright/i.test(navigator.userAgent || '')){
+      silentLock('headless'); return;
+    }
+    // 常見 headless 跡象：window.chrome 缺失
+    if(navigator.userAgent && navigator.userAgent.indexOf('Chrome') > -1 && !window.chrome){
+      silentLock('chrome-missing'); return;
+    }
+  }catch(e){ silentLock('detect-error'); return; }
+
+  /* ---------- L4 · Origin Lock 同步檢查 ---------- */
+  try{
+    var host = location.hostname || '';
+    var path = location.pathname || '';
+    var protocol = location.protocol || '';
+    // file:// 開啟 → 鎖定
+    if(protocol === 'file:'){ silentLock('file-protocol'); return; }
+    // about:blank / data: → 鎖定
+    if(protocol === 'about:' || protocol === 'data:'){ silentLock('non-http'); return; }
+    // host 不符 → 鎖定
+    if(host !== ALLOWED_HOST){ silentLock('host'); return; }
+    // path 前綴不符 → 鎖定
+    if(path.indexOf(ALLOWED_PATH) !== 0){ silentLock('path'); return; }
+  }catch(e){ silentLock('origin-error'); return; }
+
+  /* ---------- L8 · HEAD ping 線上活性驗證 ---------- */
+  var __wyReadyResolve;
+  window.__wyReady = new Promise(function(res){ __wyReadyResolve = res; });
+
+  function pingFreshness(){
+    var pingURL = location.protocol + '//' + ALLOWED_HOST + ALLOWED_PATH +
+                  '?_wyping=' + Date.now() + '.' + Math.random().toString(36).slice(2);
+    var timeout = 6000;
+
+    var controller, timer;
+    try{ controller = new AbortController(); }catch(e){}
+
+    var fetchOpts = {
+      method:'HEAD',
+      cache:'no-store',
+      mode:'cors',
+      credentials:'omit',
+      redirect:'manual'
+    };
+    if(controller) fetchOpts.signal = controller.signal;
+
+    timer = setTimeout(function(){
+      if(controller) try{ controller.abort(); }catch(e){}
+    }, timeout);
+
+    fetch(pingURL, fetchOpts).then(function(resp){
+      clearTimeout(timer);
+      // 通過：移除 preguard、reveal
+      document.documentElement.classList.add('wy-ready');
+      window.__wyOriginOK = true;
+      if(__wyReadyResolve) __wyReadyResolve(true);
+    }).catch(function(err){
+      clearTimeout(timer);
+      silentLock('ping-failed');
+    });
+  }
+
+  /* ---------- L2 · 列印攔截 + window.print 覆寫 ---------- */
+  try{
+    var origPrint = window.print;
+    window.print = function(){};
+    Object.defineProperty(window, 'print', {value: function(){}, writable:false, configurable:false});
+  }catch(e){}
+
+  document.addEventListener('keydown', function(e){
+    var k = (e.key || '').toLowerCase();
+    var ctrl = e.metaKey || e.ctrlKey;
+    // ⌘P/Ctrl+P
+    if(ctrl && (k === 'p')){ e.preventDefault(); e.stopPropagation(); return false; }
+    // ⌘S/Ctrl+S（另存）
+    if(ctrl && (k === 's')){ e.preventDefault(); e.stopPropagation(); return false; }
+    // ⌘C/Ctrl+C, ⌘X/Ctrl+X, ⌘A/Ctrl+A（複製、剪下、全選）
+    if(ctrl && (k === 'c' || k === 'x' || k === 'a')){ e.preventDefault(); e.stopPropagation(); return false; }
+    // ⌘U/Ctrl+U（檢視原始碼）
+    if(ctrl && (k === 'u')){ e.preventDefault(); e.stopPropagation(); return false; }
+    // F12 / Cmd+Opt+I/J / Ctrl+Shift+I/J/C/K（DevTools）
+    if(k === 'f12'){ e.preventDefault(); e.stopPropagation(); return false; }
+    if(ctrl && e.shiftKey && (k === 'i' || k === 'j' || k === 'c' || k === 'k')){
+      e.preventDefault(); e.stopPropagation(); return false;
+    }
+    if(e.metaKey && e.altKey && (k === 'i' || k === 'j' || k === 'c')){
+      e.preventDefault(); e.stopPropagation(); return false;
+    }
+  }, true);
+
+  /* ---------- 禁止文字空白 · copy/cut 永遠寫入零字元 ---------- */
+  // 即使瀏覽器允許 copy 事件，clipboardData 一律設為空字串
+  function blankClipboard(e){
+    try{
+      e.preventDefault();
+      e.stopPropagation();
+      var cd = e.clipboardData || window.clipboardData;
+      if(cd){
+        // 寫入零字元：所有可能的 MIME 都覆寫為空
+        try{ cd.setData('text/plain', ''); }catch(_){}
+        try{ cd.setData('text/html', ''); }catch(_){}
+        try{ cd.setData('Text', ''); }catch(_){}
+      }
+      // 順便清除目前選取，讓 OS 層級的 copy 也拿不到
+      try{
+        var sel = window.getSelection ? window.getSelection() : null;
+        if(sel) sel.removeAllRanges();
+      }catch(_){}
+      return false;
+    }catch(_){}
+  }
+  ['copy','cut'].forEach(function(ev){
+    document.addEventListener(ev, blankClipboard, true);
+    window.addEventListener(ev, blankClipboard, true);
+  });
+
+  /* ---------- 防右鍵、選取、拖曳 ---------- */
+  ['contextmenu','selectstart','dragstart'].forEach(function(ev){
+    document.addEventListener(ev, function(e){
+      e.preventDefault(); e.stopPropagation(); return false;
+    }, true);
+  });
+
+  /* ---------- 持續清除 selection ---------- */
+  setInterval(function(){
+    try{
+      var sel = window.getSelection ? window.getSelection() : null;
+      if(sel && sel.rangeCount > 0) sel.removeAllRanges();
+    }catch(_){}
+  }, 250);
+
+  /* ---------- DevTools 偵測（尺寸 heuristic）---------- */
+  var __devCheck = setInterval(function(){
+    var threshold = 160;
+    if(window.outerWidth - window.innerWidth > threshold ||
+       window.outerHeight - window.innerHeight > threshold){
+      clearInterval(__devCheck);
+      silentLock('devtools');
+    }
+  }, 1000);
+
+  /* ---------- L3 強化 · beforeprint 即清空（雙保險）---------- */
+  window.addEventListener('beforeprint', function(){
+    if(document.body) document.body.innerHTML = '';
+    document.documentElement.style.visibility = 'hidden';
+  }, true);
+  try{
+    var mq = window.matchMedia('print');
+    if(mq && mq.addEventListener){
+      mq.addEventListener('change', function(e){
+        if(e.matches){
+          if(document.body) document.body.innerHTML = '';
+          document.documentElement.style.visibility = 'hidden';
+        }
+      });
+    }
+  }catch(e){}
+
+  /* ---------- 啟動 HEAD ping ---------- */
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', pingFreshness);
+  } else {
+    pingFreshness();
+  }
 })();
 </script>
 </body>
