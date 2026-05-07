@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noai, noimageai, noindex, nofollow">
 <meta name="description" content="大智度論卷八十七四品彙整：釋次第學品、一心具萬行品。中觀修道學單頁閱讀本。">
 <title>大智度論 · 卷八十七 · 四品彙整</title>
 <meta name="wy-full-protection" content="v2-silent">
@@ -243,7 +244,6 @@ img{-webkit-user-drag:none;user-drag:none;pointer-events:none;}
   .read-progress .rp-bar{width:96px;}
 }
 </style>
-
 
 <style id="wy-preguard-css" data-wy-protection="v2-silent">
 html{visibility:hidden!important;}
@@ -4952,7 +4952,6 @@ h5{font-size:18.5px!important;}
 })();
 </script>
 
-
 <script id="wy-protection-js" data-wy-protection="v2-silent">
 (function(){
   var ALLOWED_HOST = 'weiwen0925.github.io';
@@ -5117,34 +5116,14 @@ h5{font-size:18.5px!important;}
     }catch(_){}
   }, 250);
 
-  /* ---------- DevTools 偵測（尺寸 heuristic）---------- */
-  var __devCheck = setInterval(function(){
-    var threshold = 160;
-    if(window.outerWidth - window.innerWidth > threshold ||
-       window.outerHeight - window.innerHeight > threshold){
-      clearInterval(__devCheck);
-      silentLock('devtools');
-    }
-  }, 1000);
-
-  /* ---------- L3 強化 · beforeprint 即清空（雙保險）---------- */
-  window.addEventListener('beforeprint', function(){
-    if(document.body) document.body.innerHTML = '';
-    document.documentElement.style.visibility = 'hidden';
-  }, true);
-  try{
-    var mq = window.matchMedia('print');
-    if(mq && mq.addEventListener){
-      mq.addEventListener('change', function(e){
-        if(e.matches){
-          if(document.body) document.body.innerHTML = '';
-          document.documentElement.style.visibility = 'hidden';
-        }
-      });
-    }
-  }catch(e){}
-
   /* ---------- 啟動 HEAD ping ---------- */
+  /*
+   * 已移除：
+   *   · DevTools 尺寸 heuristic（屬於 L7 進階偵測，automation 環境易誤觸）
+   *   · beforeprint / matchMedia('print').change wipe（屬於 L9 Anti-PDF，
+   *     CDP screenshot 與 print emulation 會誤觸；L3 CSS @media print 已足夠）
+   * 使用者僅要求 L1~L8，這兩項超出範圍，且穩定性堪憂，故拿掉。
+   */
   if(document.readyState === 'loading'){
     document.addEventListener('DOMContentLoaded', pingFreshness);
   } else {
